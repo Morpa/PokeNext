@@ -1,4 +1,4 @@
-export type EvolutionDetails = {
+type EvolutionDetails = {
   gender: string
   held_item: string
   item: string
@@ -22,7 +22,7 @@ export type EvolutionDetails = {
   turn_upside_down: boolean
 }
 
-export type EvolvesTo = {
+type EvolvesTo = {
   evolution_details: EvolutionDetails[]
   evolves_to: EvolvesTo[]
   species: {

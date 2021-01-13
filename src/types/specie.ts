@@ -1,9 +1,9 @@
-export type EggGroup = {
+type EggGroup = {
   name: string
   url: string
 }
 
-export type FlavorTextEntry = {
+type FlavorTextEntry = {
   flavor_text: string
   language: {
     name: string
@@ -15,7 +15,7 @@ export type FlavorTextEntry = {
   }
 }
 
-export type Genera = {
+type Genera = {
   genus: string
   language: {
     name: string
@@ -23,7 +23,7 @@ export type Genera = {
   }
 }
 
-export type Name = {
+type Name = {
   language: {
     name: string
     url: string

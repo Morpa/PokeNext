@@ -1,4 +1,4 @@
-export type Ability = {
+type Ability = {
   ability: {
     name: string
     url: string
@@ -7,12 +7,12 @@ export type Ability = {
   slot: number
 }
 
-export type Form = {
+type Form = {
   name: string
   url: string
 }
 
-export type GameIndice = {
+type GameIndice = {
   game_index: number
   version: {
     name: string
@@ -20,14 +20,14 @@ export type GameIndice = {
   }
 }
 
-export type Move = {
+type Move = {
   move: {
     name: string
     url: string
   }
 }
 
-export type Stat = {
+type Stat = {
   base_stat: number
   effort: number
   stat: {
@@ -42,7 +42,7 @@ export type Stat = {
   }
 }
 
-export type Type = {
+type Type = {
   slot: number
   type: {
     name: string
