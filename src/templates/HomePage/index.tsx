@@ -1,29 +1,34 @@
+import { Search } from '@styled-icons/material-outlined'
+
 import { Grid } from 'components/Grid'
 import PokeCard from 'components/PokeCard'
+import TextField from 'components/TextField'
+
+import { PokemonsProps } from 'pages'
+
 import Base from 'templates/Base'
-import { HomeProps } from 'pages'
 
-const HomePage = ({ pokemons }: HomeProps) => {
-  return (
-    <Base>
-      <Grid>
-        {pokemons.map((pokemon) => {
-          const pokemonNumber = pokemon.url
-            .replace('https://pokeapi.co/api/v2/pokemon/', '')
-            .replace('/', '')
-
-          return (
-            <PokeCard
-              key={pokemon.name}
-              name={pokemon.name}
-              imgUrl={`https://pokeres.bastionbot.org/images/pokemon/${pokemonNumber}.png`}
-              layoutId={`${pokemon.name}-logo`}
-            />
-          )
-        })}
-      </Grid>
-    </Base>
-  )
-}
+const HomePage = ({ pokemons }: PokemonsProps) => (
+  <Base>
+    <TextField
+      name="search"
+      placeholder="Search pokemons..."
+      initialValue=""
+      icon={<Search />}
+    />
+    <Grid>
+      {pokemons.map((pokemon) => {
+        return (
+          <PokeCard
+            key={pokemon.name}
+            name={pokemon.name}
+            imgUrl={pokemon.image}
+            layoutId={`${pokemon.name}-logo`}
+          />
+        )
+      })}
+    </Grid>
+  </Base>
+)
 
 export default HomePage

@@ -4,31 +4,32 @@ import Link from 'next/link'
 import api from 'services/api'
 
 import Base from 'templates/Base'
-import PokeTypes from 'components/PokeTypes'
+import { Pokemon } from 'types/pokemon'
+
 import * as S from 'components/Pokemon'
 
-type PokemonsProps = {
-  url: string
-  name: string
-}
+type PokemonPageProps = Pick<Pokemon, 'name'>
 
 type PokemonProps = {
-  pokemon: {
-    id: number
-    name: string
-    base_experience: number
-    weight: number
-    types: {
-      type: { name: string }
-    }[]
-  }
+  pokemon: Pokemon
 }
 
-const Pokemon = ({ pokemon }: PokemonProps) => {
+const PokemonPage = ({ pokemon }: PokemonProps) => {
   return (
     <Base>
       <S.Wrapper>
-        <S.Image
+        <S.Image src={pokemon.image} layoutId={`${pokemon.name}-logo`} />
+
+        <S.Infos
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <S.Info>Base Experience - {pokemon.base_experience}</S.Info>
+          <S.Info>Weight - {pokemon.weight}</S.Info>
+        </S.Infos>
+
+        {/* <S.Image
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
           layoutId={`${pokemon.name}-logo`}
         />
@@ -44,7 +45,7 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
           {pokemon.types.map((item) => (
             <PokeTypes type={item.type.name} key={item.type.name}></PokeTypes>
           ))}
-        </S.Infos>
+        </S.Infos> */}
       </S.Wrapper>
 
       <div>
@@ -62,12 +63,11 @@ const Pokemon = ({ pokemon }: PokemonProps) => {
   )
 }
 
-export const getStaticPaths: GetStaticPaths<PokemonsProps> = async () => {
-  const { data } = await api.get(`/pokemon/?limit=1118`)
-  const pokemons = data.results
+export const getStaticPaths: GetStaticPaths<PokemonPageProps> = async () => {
+  const { data } = await api.get(`/pokemons`)
 
-  const paths = pokemons.map((poke: PokemonsProps) => {
-    return { params: { pokemon: poke.name } }
+  const paths = data.map((pokemon: PokemonPageProps) => {
+    return { params: { pokemon: pokemon.name.toLowerCase() } }
   })
 
   return {
@@ -79,16 +79,14 @@ export const getStaticPaths: GetStaticPaths<PokemonsProps> = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const { pokemon } = context.params!
 
-  const { data } = await api.get(`/pokemon/${pokemon}`)
-
-  const pokemonData = data
+  const { data } = await api.get(`/pokemons/${pokemon}`)
 
   return {
     props: {
-      pokemon: pokemonData
+      pokemon: data
     },
     revalidate: 60
   }
 }
 
-export default Pokemon
+export default PokemonPage
