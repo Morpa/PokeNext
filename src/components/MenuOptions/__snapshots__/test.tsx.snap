@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuOptions /> should render options correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  padding: 1.6rem 2.4rem 0.8rem 2.4rem;
+  color: #FF9F1C;
+}
+
+.c0 strong {
+  margin-top: 0.8rem;
+  font-weight: 700;
+}
+
+.c0 > svg {
+  width: 2.4rem;
+}
+
+.c0:hover {
+  color: #FF9F1C;
+  cursor: pointer;
+}
+
+.c0:after {
+  content: '';
+  width: 8rem;
+  height: 0.1rem;
+  background: #FF9F1C;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+<a
+  class="c0"
+  href="/link"
+>
+  <strong>
+    My link
+  </strong>
+</a>
+`
