@@ -13,13 +13,14 @@ export const Wrapper = styled.div`
 
     ${media.lessThan('medium')`
         flex-direction:column;
+        margin-bottom: 15rem;
     `};
   `}
 `
 export const TabWrapper = styled.div`
   ${({ theme }) => css`
     .react-tabs {
-      margin-top: -21rem;
+      margin-top: -25rem;
       margin-left: 3rem;
       height: 20rem;
       width: -22rem;
@@ -77,6 +78,36 @@ export const Name = styled.h1`
 
     ${media.lessThan('medium')`
         font-size: 4.5rem;
+    `}
+  `}
+`
+export const Type = styled.h2`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xxlarge};
+    color: ${theme.colors.yellow};
+
+    ${media.lessThan('medium')`
+        font-size: 2.5rem;
+    `}
+  `}
+`
+
+export const WrapperTypes = styled.span`
+  display: flex;
+  align-items: center;
+`
+export const Types = styled.div`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xxlarge};
+    background: ${theme.colors.yellow};
+    color: ${theme.colors.dark};
+    border-radius: ${theme.border.radius};
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: ${theme.spacings.xxsmall};
+
+    ${media.lessThan('medium')`
+        font-size: 2.5rem;
     `}
   `}
 `

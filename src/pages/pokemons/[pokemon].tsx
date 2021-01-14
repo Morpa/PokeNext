@@ -53,6 +53,8 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <S.Name>{pokemon.name}</S.Name>
+          <S.Type>{pokemon.genera}</S.Type>
+
           <S.Image src={pokemon.image} layoutId={`${pokemon.name}-logo`} />
         </S.WrapperImage>
 
@@ -67,7 +69,6 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
                 <Tab>About</Tab>
                 <Tab>Base Stats</Tab>
                 <Tab>Evolution</Tab>
-                <Tab>Moves</Tab>
               </TabList>
 
               <TabPanel>
@@ -85,6 +86,12 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
                       {pokemonFormatted.weightInPounds} lbs)
                     </span>
                   </S.Phisic>
+                  <S.WrapperTypes>
+                    <strong>Type</strong>
+                    {pokemon.types.map((type, index) => (
+                      <S.Types key={`${index}-type`}>{type.name}</S.Types>
+                    ))}
+                  </S.WrapperTypes>
                 </S.About>
               </TabPanel>
             </Tabs>
