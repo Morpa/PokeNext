@@ -10,6 +10,8 @@ module.exports = {
     '!src/services/**/*.ts',
     '!src/types/**/*.ts',
     '!src/hooks/**/*.ts',
+    '!src/utils/**/*.ts',
+    '!src/constants/**/*.ts',
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],

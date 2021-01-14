@@ -1,16 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Loading /> should render the heading 1`] = `
-.c0 body {
-  background-color: transparent;
-  text-align: center;
-}
-
-.c0 svg {
-  width: 50%;
-  margin-top: 150px;
-}
-
 .c0 .st1,
 .c0 .st11 {
   fill: #ffd400;
@@ -324,9 +314,5 @@ exports[`<Loading /> should render the heading 1`] = `
       />
     </g>
   </svg>
-   
-  <h1>
-    Loading
-  </h1>
 </main>
-`
+`;

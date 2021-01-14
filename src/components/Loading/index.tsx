@@ -147,8 +147,7 @@ const Loading = () => (
           className="st1"
         />
       </g>
-    </svg>{' '}
-    <h1>Loading</h1>
+    </svg>
   </S.Wrapper>
 )
 

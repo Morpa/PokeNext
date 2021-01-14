@@ -56,7 +56,7 @@ const Navbar = ({ isVisible }: NavbarProps) => {
           <Link href="/search">
             <a aria-label="search">
               <SearchIcon />
-              <span>Procurar pokemons</span>
+              <span>Search</span>
             </a>
           </Link>
         </S.IconWrapper>
@@ -67,7 +67,7 @@ const Navbar = ({ isVisible }: NavbarProps) => {
           <Link href="/">
             <a aria-label="back">
               <BackIcon />
-              <span>Voltar</span>
+              <span>Back</span>
             </a>
           </Link>
         </S.IconWrapper>

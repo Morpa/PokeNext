@@ -1,16 +1,6 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  body {
-    background-color: transparent;
-    text-align: center;
-  }
-
-  svg {
-    width: 50%;
-    margin-top: 150px;
-  }
-
   .st1,
   .st11 {
     fill: #ffd400;
