@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 
 import HomePage from 'templates/HomePage'
 
@@ -14,7 +14,7 @@ export default function Home({ pokemons }: PokemonsProps) {
   return <HomePage pokemons={pokemons} />
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data } = await api.get('/pokemons', {
     params: { limit: 36 }
   })

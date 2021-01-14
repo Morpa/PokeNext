@@ -64,7 +64,9 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
 }
 
 export const getStaticPaths: GetStaticPaths<PokemonPageProps> = async () => {
-  const { data } = await api.get(`/pokemons`)
+  const { data } = await api.get(`/pokemons`, {
+    params: { limit: 36 }
+  })
 
   const paths = data.map((pokemon: PokemonPageProps) => {
     return { params: { pokemon: pokemon.name.toLowerCase() } }
@@ -72,7 +74,7 @@ export const getStaticPaths: GetStaticPaths<PokemonPageProps> = async () => {
 
   return {
     paths,
-    fallback: false
+    fallback: true
   }
 }
 

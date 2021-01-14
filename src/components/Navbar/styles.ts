@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
@@ -19,18 +20,25 @@ export const LogoImage = styled.img`
   width: 20rem;
 `
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled(motion.div)`
   ${({ theme }) => css`
     color: ${theme.colors.white};
 
     a {
+      display: flex;
+      align-items: center;
       color: inherit;
       text-decoration: none;
 
       > svg {
+        margin-right: ${theme.spacings.xxsmall};
         display: block;
         width: 3rem;
       }
+
+      ${media.lessThan('medium')`
+       flex-direction:column;
+      `}
     }
 
     ${media.lessThan('medium')`
