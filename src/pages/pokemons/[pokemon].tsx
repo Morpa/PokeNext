@@ -64,9 +64,7 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
 }
 
 export const getStaticPaths: GetStaticPaths<PokemonPageProps> = async () => {
-  const { data } = await api.get(`/pokemons`, {
-    params: { limit: 36 }
-  })
+  const { data } = await api.get(`/pokemons`)
 
   const paths = data.map((pokemon: PokemonPageProps) => {
     return { params: { pokemon: pokemon.name.toLowerCase() } }
