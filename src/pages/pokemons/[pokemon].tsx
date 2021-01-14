@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
@@ -23,19 +22,6 @@ type PokemonProps = {
 const PokemonPage = ({ pokemon }: PokemonProps) => {
   const router = useRouter()
 
-  const pokemonFormatted = useMemo(() => {
-    return {
-      ...pokemon,
-      descriptionWithNoBreakLine: replaceString(pokemon.description),
-      heightInMeters: convertValues.decimeterToMeter(pokemon.height),
-      heightInFeet: convertValues.decimeterToFeet(pokemon.height),
-      weightInKilograms: convertValues.hectogramsToKilograms(pokemon.weight),
-      weightInPounds: convertValues.hectogramsToPounds(pokemon.weight)
-    }
-  }, [pokemon])
-
-  const pokemonGendersRate = getPokemonGenderStats(pokemon.gender_rate)
-
   if (router.isFallback) {
     return (
       <Base>
@@ -43,6 +29,13 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
       </Base>
     )
   }
+
+  const pokemonGendersRate = getPokemonGenderStats(pokemon.gender_rate)
+  const descriptionWithNoBreakLine = replaceString(pokemon.description)
+  const heightInMeters = convertValues.decimeterToMeter(pokemon.height)
+  const heightInFeet = convertValues.decimeterToFeet(pokemon.height)
+  const weightInKilograms = convertValues.hectogramsToKilograms(pokemon.weight)
+  const weightInPounds = convertValues.hectogramsToPounds(pokemon.weight)
 
   return (
     <Base>
@@ -67,23 +60,21 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
             <Tabs>
               <TabList>
                 <Tab>About</Tab>
-                <Tab>Base Stats</Tab>
-                <Tab>Evolution</Tab>
+                {/* <Tab>Base Stats</Tab>
+                <Tab>Evolution</Tab> */}
               </TabList>
 
               <TabPanel>
                 <S.About>
-                  <p>{pokemonFormatted.description}</p>
+                  <p>{descriptionWithNoBreakLine}</p>
                   <S.Phisic>
                     <span>
-                      <strong>Height</strong> -{' '}
-                      {pokemonFormatted.heightInMeters} m (
-                      {pokemonFormatted.heightInFeet} ft)
+                      <strong>Height</strong> - {heightInMeters} m (
+                      {heightInFeet} ft)
                     </span>
                     <span>
-                      <strong>Weight</strong> -{' '}
-                      {pokemonFormatted.weightInKilograms} kg (
-                      {pokemonFormatted.weightInPounds} lbs)
+                      <strong>Weight</strong> - {weightInKilograms} kg (
+                      {weightInPounds} lbs)
                     </span>
                   </S.Phisic>
                   <S.WrapperTypes>
