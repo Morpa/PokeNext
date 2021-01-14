@@ -18,7 +18,7 @@ const fetcher = (_: unknown, query: string) =>
 
 export const useSearch = (initialSearch: string) => {
   const [query, setQuery] = useState(initialSearch)
-  const debouncedSearchTerm = useDebounce(query, 500)
+  const debouncedSearchTerm = useDebounce(query, 500).toLowerCase()
   const { data, error } = useSWR(
     debouncedSearchTerm ? ['/', debouncedSearchTerm] : null,
     fetcher

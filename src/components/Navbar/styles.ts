@@ -38,6 +38,10 @@ export const IconWrapper = styled(motion.div)`
 
       ${media.lessThan('medium')`
        flex-direction:column;
+
+       > span {
+          display: none;
+         }
       `}
     }
 
