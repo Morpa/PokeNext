@@ -1,18 +1,18 @@
 import styled, { css } from 'styled-components'
 import { motion } from 'framer-motion'
-import { lighten } from 'polished'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: ${theme.colors.red};
-    padding: ${theme.spacings.medium};
+    background: ${theme.colors.yellow};
+    padding: ${theme.spacings.xxsmall};
     border-radius: ${theme.border.radius};
 
     &:hover {
-      background: ${lighten(0.2, theme.colors.red)};
+      background: #b3a125;
+      border: 1px solid #3b4cca;
     }
   `}
 `
@@ -20,7 +20,6 @@ export const Wrapper = styled.div`
 export const Title = styled.h1`
   ${({ theme }) => css`
     color: ${theme.colors.dark};
-    text-transform: capitalize;
   `}
 `
 
@@ -33,8 +32,8 @@ export const ImageWrappper = styled.div`
     background-size: cover;
     width: 35rem;
     height: 35rem;
-    background-position: center center;
-    margin-top: ${theme.spacings.small};
+    background-position: center;
+    margin-top: ${theme.spacings.xxsmall};
   `}
 `
 export const Image = styled(motion.img)`

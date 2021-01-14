@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> should render the heading 1`] = `
+.c0 body {
+  background-color: transparent;
+  text-align: center;
+}
+
+.c0 svg {
+  width: 50%;
+  margin-top: 150px;
+}
+
+.c0 .st1,
+.c0 .st11 {
+  fill: #ffd400;
+}
+
+.c0 .st2 {
+  fill: #ffb000;
+}
+
+.c0 .st3 {
+  fill: #33363a;
+}
+
+.c0 .st4 {
+  fill: #fff800;
+}
+
+.c0 .st5 {
+  fill: #ff1a1a;
+}
+
+.c0 .st6 {
+  fill: #d61d1d;
+}
+
+.c0 .st7 {
+  fill: #6d5c4d;
+}
+
+.c0 .st8 {
+  fill: #ffffff;
+}
+
+.c0 .st9,
+.c0 .st91 {
+  fill: #f7931e;
+}
+
+.c0 #cuerpo {
+  -webkit-animation: rubberBand 1.5s linear infinite;
+  animation: rubberBand 1.5s linear infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.c0 #cachete-rojo-izq {
+  -webkit-animation: rubberBand 1.5s linear infinite;
+  animation: rubberBand 1.5s linear infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.c0 #cachete-rojo-der {
+  -webkit-animation: rubberBand 1.5s linear 0.3s infinite;
+  animation: rubberBand 1.5s linear 0.3s infinite;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.c0 #oreja-izq {
+  -webkit-animation: orejitas 0.5s ease-in-out alternate infinite;
+  animation: orejitas 0.5s ease-in-out alternate infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #oreja-der {
+  -webkit-animation: orejitas 0.5s ease-in-out alternate 0.2s infinite;
+  animation: orejitas 0.5s ease-in-out alternate 0.2s infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #patita-izq {
+  -webkit-animation: patitas 0.4s ease-in-out alternate 0.1s infinite;
+  animation: patitas 0.4s ease-in-out alternate 0.1s infinite;
+}
+
+.c0 #patita-der {
+  -webkit-animation: patitas 0.3s ease-in-out alternate infinite;
+  animation: patitas 0.3s ease-in-out alternate infinite;
+}
+
+.c0 #iris-derecho,
+.c0 #iris-izquierdo {
+  -webkit-animation: iris 4.4s ease-in-out alternate infinite;
+  animation: iris 4.4s ease-in-out alternate infinite;
+}
+
+.c0 #nariz {
+  -webkit-animation: nariz 1s linear alternate infinite;
+  animation: nariz 1s linear alternate infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #cola {
+  -webkit-animation: nariz 0.5s ease-in-out alternate infinite;
+  animation: nariz 0.5s ease-in-out alternate infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #rayos .st91 {
+  -webkit-animation: rayitos 2.5s ease-in-out infinite;
+  animation: rayitos 2.5s ease-in-out infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #rayos .st9 {
+  -webkit-animation: rayitos 3s ease-in-out 0.2s infinite;
+  animation: rayitos 3s ease-in-out 0.2s infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #rayos .st11 {
+  -webkit-animation: rayitos 3s ease-in-out 0.4s infinite;
+  animation: rayitos 3s ease-in-out 0.4s infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #rayos .st1 {
+  -webkit-animation: rayitos 3s ease-in-out 0.8s infinite;
+  animation: rayitos 3s ease-in-out 0.8s infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.c0 #rayos .st2 {
+  -webkit-animation: rayitos 1s ease-in-out alternate 0.9s infinite;
+  animation: rayitos 1s ease-in-out alternate 0.9s infinite;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+<main
+  class="c0"
+>
+  <svg
+    aria-label="Loading"
+    role="img"
+    viewBox="0 0 800 600"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs />
+    <g
+      id="cola"
+    >
+      <path
+        class="st1"
+        d="M449 216.9h-29l-16 28h13l-17 34.5 44.7-40h-14.5l18.8-22.5zm0 0"
+        id="Capa_33"
+      />
+      <path
+        class="st2"
+        d="M414.5 226.6l-10.4 18.3h13l-17 34.5 33.8-30.3h-11.3l8.1-9.7h-.5l10.7-12.9h-26.4zm0 0"
+        id="Capa_32"
+      />
+      <path
+        class="st3"
+        d="M400 281.1c-.4 0-.7-.1-1-.3-.6-.5-.8-1.3-.5-2.1l15.8-32.1H404c-.6 0-1.1-.3-1.4-.8-.3-.5-.3-1.1 0-1.7l15.9-28c.3-.5.9-.8 1.5-.8h29c.7 0 1.2.4 1.5 1 .3.6.2 1.3-.2 1.8l-16.5 19.8h11c.7 0 1.3.4 1.6 1.1.2.6.1 1.4-.4 1.8l-44.7 40c-.5.1-.9.3-1.3.3zm7-37.9h10c.6 0 1.1.3 1.4.8.3.5.3 1.1.1 1.6l-13.2 26.8 35-31.3h-10.1c-.6 0-1.2-.4-1.5-1-.3-.6-.2-1.3.2-1.8l16.5-19.8H421l-14 24.7zm0 0"
+        id="Capa_31"
+      />
+    </g>
+    <g
+      id="cuerpo"
+    >
+      <path
+        class="st4"
+        d="M473.9 304.3c0 23-24.5 41.7-54.8 41.7-30.3 0-54.8-18.7-54.8-41.7 0-23 24.5-50.6 54.8-50.6 30.3-.1 54.8 27.5 54.8 50.6zm0 0"
+      />
+      <path
+        class="st1"
+        d="M473.9 304.3c0 23-24.5 41.7-54.8 41.7-30.3 0-54.8-18.7-54.8-41.7 0-23 24.5-38.9 54.8-38.9 30.3 0 54.8 15.8 54.8 38.9zm0 0"
+      />
+      <path
+        class="st2"
+        d="M473.9 304.3c0 23-24.5 41.7-54.8 41.7-30.3 0-54.8-18.7-54.8-41.7 0-23 7 20.4 54.8 20.4 47.9 0 54.8-43.5 54.8-20.4zm0 0"
+      />
+    </g>
+    <g
+      id="oreja-izq"
+    >
+      <path
+        class="st1"
+        d="M358.2 262.9c7.1 11.7 17.1 18.6 26.7 19.8 1.7-12-1-25.9-8.1-37.6-7.1-11.7-17.1-18.6-26.7-19.8-1.6 12 1 25.9 8.1 37.6zm0 0"
+      />
+      <path
+        class="st2"
+        d="M350.2 225.3c-1.7 12 1 25.9 8.1 37.6 7.1 11.7 17.1 18.6 26.7 19.8l-34.8-57.4zm0 0"
+      />
+    </g>
+    <g
+      id="oreja-der"
+    >
+      <path
+        class="st1"
+        d="M480 262.9c-7.1 11.7-17.1 18.6-26.7 19.8-1.7-12 1-25.9 8.1-37.6 7.1-11.7 17.1-18.6 26.7-19.8 1.7 12-.9 25.9-8.1 37.6zm0 0"
+      />
+      <path
+        class="st2"
+        d="M488.1 225.3c1.7 12-1 25.9-8.1 37.6-7.1 11.7-17.1 18.6-26.7 19.8l34.8-57.4zm0 0"
+      />
+    </g>
+    <g
+      id="cachete-rojo-izq"
+    >
+      <path
+        class="st5"
+        d="M392.4 308c0 4.3-3.5 7.8-7.8 7.8s-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8 7.8 3.5 7.8 7.8zm0 0"
+      />
+      <path
+        class="st6"
+        d="M392.4 308c0 4.3-3.5 7.8-7.8 7.8s-7.8-3.5-7.8-7.8"
+      />
+    </g>
+    <g
+      id="cachete-rojo-der"
+    >
+      <path
+        class="st5"
+        d="M461.5 308c0 4.3-3.5 7.8-7.8 7.8s-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8 7.8 3.5 7.8 7.8zm0 0"
+      />
+      <path
+        class="st6"
+        d="M461.5 308c0 4.3-3.5 7.8-7.8 7.8s-7.8-3.5-7.8-7.8"
+      />
+    </g>
+    <path
+      class="st3"
+      d="M429.9 299.7c-.9 0-1.7.8-1.7 1.7 0 1.6-1.3 2.9-2.9 2.9h-1.6c-1.6 0-2.9-1.3-2.9-2.9v-1.6-.2l3.5-1.7c.7-.3 1.1-1.1.9-1.9-.2-.8-.8-1.3-1.6-1.3h-8.7c-.8 0-1.4.5-1.6 1.3-.2.8.2 1.5.9 1.9l3.5 1.7v1.8c0 1.6-1.3 2.9-2.9 2.9H413c-1.6 0-2.9-1.3-2.9-2.9 0-.9-.8-1.7-1.7-1.7-.9 0-1.7.8-1.7 1.7 0 3.4 2.8 6.2 6.2 6.2h1.6c1.8 0 3.4-.8 4.6-2 1.1 1.2 2.8 2 4.6 2h1.6c3.4 0 6.2-2.8 6.2-6.2 0-1-.7-1.7-1.6-1.7zm0 0"
+      id="nariz"
+    />
+    <path
+      class="st7"
+      d="M401.1 288.4c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9zm0 0"
+      id="Capa_14"
+    />
+    <path
+      class="st8"
+      d="M391.4 285.5c0 2-1.6 3.7-3.7 3.7-2 0-3.7-1.6-3.7-3.7 0-2 1.6-3.7 3.7-3.7 2 0 3.7 1.6 3.7 3.7zm0 0"
+      id="Capa_13"
+    />
+    <path
+      class="st3"
+      d="M392.2 277.7c-3.6 0-6.8 1.8-8.7 4.6-.1.2-.2.3-.3.5-1 1.6-1.6 3.5-1.6 5.6 0 5.9 4.8 10.6 10.6 10.6s10.6-4.8 10.6-10.6-4.8-10.7-10.6-10.7zm0 18c-3 0-5.6-1.9-6.7-4.5.8 0 1.7-.2 2.7-.4.4 0 .8-.1 1.1-.2.9-.2 1.9-.3 2.9-.3 2.7 0 5.1.9 6.7 1-1.1 2.5-3.7 4.4-6.7 4.4zm0 0"
+      id="Capa_12"
+    />
+    <path
+      class="st8"
+      d="M389.7 285.5c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm0 0"
+      id="iris-izquierdo"
+    />
+    <path
+      class="st7"
+      d="M455.1 288.4c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9zm0 0"
+      id="Capa_10"
+    />
+    <path
+      class="st8"
+      d="M445.3 285.5c0 2-1.6 3.7-3.6 3.7s-3.7-1.6-3.7-3.7c0-2 1.6-3.7 3.7-3.7 2 0 3.6 1.6 3.6 3.7zm0 0"
+      id="Capa_9"
+    />
+    <path
+      class="st3"
+      d="M446.1 277.7c-3.6 0-6.8 1.8-8.7 4.6-.1.2-.2.3-.3.5-1 1.6-1.6 3.5-1.6 5.6 0 5.9 4.8 10.6 10.6 10.6 5.9 0 10.6-4.8 10.6-10.6s-4.7-10.7-10.6-10.7zm0 18c-3 0-5.6-1.9-6.7-4.5.8 0 1.7-.2 2.8-.4.4 0 .7-.1 1.1-.2.9-.2 1.9-.3 2.9-.3 2.7 0 5.1.9 6.7 1-1.2 2.5-3.8 4.4-6.8 4.4zm0 0"
+      id="Capa_8"
+    />
+    <path
+      class="st8"
+      d="M443.6 285.5c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm0 0"
+      id="iris-derecho"
+    />
+    <g
+      id="rayos"
+    >
+      <path
+        class="st9"
+        d="M488.8 167.6c-6.6 6.6-13 16.3-17.8 24.3 2.2.2 7.2.7 9.5.8-2.5 6.2-6.4 12.8-7.6 19.5 6.5-7.5 13.5-17.8 17.9-26.6-2.2-.2-4.8-.4-7.1-.5-.1-.1 4.5-15 5.1-17.5z"
+      />
+      <path
+        class="st91"
+        d="M384.1 160.2c-8 8-15.7 19.7-21.5 29.4 2.7.3 8.7.9 11.5 1-3.1 7.5-7.8 15.5-9.2 23.5 7.9-9.1 16.3-21.6 21.6-32.2-2.7-.2-5.8-.5-8.5-.5-.1-.1 5.4-18.1 6.1-21.2z"
+      />
+      <path
+        class="st11"
+        d="M399.7 194.7c-3.8 3.9-7.6 9.5-10.3 14.1 1.3.1 4.2.4 5.5.5-1.5 3.6-3.7 7.4-4.4 11.3 3.8-4.3 7.8-10.4 10.4-15.5-1.3-.1-2.8-.2-4.1-.3 0 0 2.6-8.6 2.9-10.1z"
+      />
+      <path
+        class="st2"
+        d="M469.8 136.8c-3.8 3.9-7.6 9.5-10.3 14.1 1.3.1 4.2.4 5.5.5-1.5 3.6-3.7 7.4-4.4 11.3 3.8-4.3 7.8-10.4 10.4-15.5-1.3-.1-2.8-.2-4.1-.3-.1.1 2.6-8.6 2.9-10.1z"
+      />
+      <path
+        class="st1"
+        d="M439.4 140.5c-8 8.1-15.9 19.9-21.6 29.6 2.7.3 8.8.9 11.6 1-3.1 7.6-7.8 15.6-9.3 23.7 7.9-9.1 16.4-21.7 21.8-32.4-2.7-.2-5.9-.5-8.6-.6-.1-.1 5.4-18.2 6.1-21.3z"
+      />
+    </g>
+  </svg>
+   
+  <h1>
+    Loading
+  </h1>
+</main>
+`
