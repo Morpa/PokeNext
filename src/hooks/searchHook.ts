@@ -5,7 +5,7 @@ import useDebounce from 'hooks/debounce'
 
 import api from 'services/api'
 
-import Pokemon from 'types/pokemon'
+import { Pokemon } from 'types/pokemon'
 
 type SearchProps = {
   Search?: Pokemon
