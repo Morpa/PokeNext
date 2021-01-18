@@ -1,12 +1,15 @@
+import 'react-tabs/style/react-tabs.css'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import 'react-tabs/style/react-tabs.css'
+import { Male } from '@styled-icons/ionicons-outline/Male'
+import { Female } from '@styled-icons/ionicons-outline/Female'
 
 import api from 'services/api'
 
 import Base from 'templates/Base'
 import Loading from 'components/Loading'
+
 import * as S from 'components/Pokemon'
 
 import { Pokemon } from 'types/pokemon'
@@ -69,21 +72,45 @@ const PokemonPage = ({ pokemon }: PokemonProps) => {
                   <p>{descriptionWithNoBreakLine}</p>
                   <S.Phisic>
                     <span>
-                      <strong>Height</strong> - {heightInMeters} m (
-                      {heightInFeet} ft)
+                      <strong>Height - </strong>
+                      {heightInMeters} m ({heightInFeet} ft)
                     </span>
                     <span>
-                      <strong>Weight</strong> - {weightInKilograms} kg (
-                      {weightInPounds} lbs)
+                      <strong>Weight - </strong>
+                      {weightInKilograms} kg ({weightInPounds} lbs)
                     </span>
                   </S.Phisic>
                   <S.WrapperTypes>
-                    <strong>Type</strong>
+                    <strong>Types - </strong>
                     {pokemon.types.map((type, index) => (
                       <S.Types key={`${index}-type`}>{type.name}</S.Types>
                     ))}
                   </S.WrapperTypes>
                 </S.About>
+
+                <S.Breeding>
+                  <strong>Breeding - </strong>
+                  {pokemonGendersRate.map((gender) => (
+                    <div key={gender.gender}>
+                      {gender.gender === 'genderless' ? (
+                        <span>Genderless</span>
+                      ) : (
+                        <>
+                          {gender.gender === 'male' ? (
+                            <Male size={16} style={{ color: '#6890F0' }} />
+                          ) : (
+                            <Female size={16} style={{ color: '#EE99AC' }} />
+                          )}
+                          {gender.rate}%
+                        </>
+                      )}
+                    </div>
+                  ))}
+                </S.Breeding>
+                <S.Training>
+                  <strong>Base EXP - </strong>
+                  <span>{pokemon.base_experience}</span>
+                </S.Training>
               </TabPanel>
             </Tabs>
           </S.TabWrapper>

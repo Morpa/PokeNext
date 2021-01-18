@@ -4,32 +4,19 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-width: 35rem;
-    padding: 5rem;
     color: ${theme.colors.white};
 
-    ${media.lessThan('medium')`
-        flex-direction:column;
-        margin-bottom: 15rem;
-    `};
+    ${media.greaterThan('medium')`
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: ${theme.grid.gutter};
+
+    `}
   `}
 `
+
 export const TabWrapper = styled.div`
   ${({ theme }) => css`
-    .react-tabs {
-      margin-top: -25rem;
-      margin-left: 3rem;
-      height: 20rem;
-      width: -22rem;
-
-      ${media.lessThan('medium')`
-        margin-top: 1rem;
-      `};
-    }
-
     .react-tabs__tab {
       color: ${theme.colors.yellow};
     }
@@ -69,6 +56,8 @@ export const Image = styled(motion.img)`
 export const Infos = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 export const Name = styled.h1`
@@ -77,7 +66,7 @@ export const Name = styled.h1`
     color: ${theme.colors.yellow};
 
     ${media.lessThan('medium')`
-        font-size: 4.5rem;
+        font-size: 4rem;
     `}
   `}
 `
@@ -87,28 +76,25 @@ export const Type = styled.h2`
     color: ${theme.colors.yellow};
 
     ${media.lessThan('medium')`
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     `}
   `}
 `
 
 export const WrapperTypes = styled.span`
   display: flex;
-  align-items: center;
+  align-items: baseline;
 `
 export const Types = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxlarge};
     background: ${theme.colors.yellow};
     color: ${theme.colors.dark};
     border-radius: ${theme.border.radius};
     margin-left: 1rem;
     margin-top: 1rem;
-    padding: ${theme.spacings.xxsmall};
-
-    ${media.lessThan('medium')`
-        font-size: 2.5rem;
-    `}
+    padding: 0 ${theme.spacings.xxsmall};
+    font-size: 1.5rem;
+    margin-top: ${theme.spacings.small};
   `}
 `
 
@@ -125,12 +111,12 @@ export const About = styled.div`
 export const Phisic = styled.div`
   ${({ theme }) => css`
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: ${theme.spacings.small};
 
     span :last-child {
       ${media.greaterThan('medium')`
-      margin-left: 1.8rem;
+        margin-left: 1.8rem;
       `}
     }
 
@@ -138,5 +124,33 @@ export const Phisic = styled.div`
       align-items: flex-start;
       flex-direction: column;
     `}
+  `}
+`
+
+export const Breeding = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: baseline;
+    margin-top: ${theme.spacings.small};
+
+    div {
+      margin-left: 1rem;
+    }
+
+    svg {
+      margin-right: 0.3rem;
+    }
+  `}
+`
+
+export const Training = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: baseline;
+    margin-top: ${theme.spacings.small};
+
+    span {
+      margin-left: 1rem;
+    }
   `}
 `

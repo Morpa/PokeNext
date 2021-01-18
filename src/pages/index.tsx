@@ -15,7 +15,7 @@ export default function Home({ pokemons }: PokemonsProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data } = await api.get('/pokemons', { params: { limit: 36 } })
+  const { data } = await api.get('/pokemons')
 
   const pokemons = data
 

@@ -20,6 +20,8 @@ export const Wrapper = styled(motion.div)`
 export const Title = styled.h1`
   ${({ theme }) => css`
     color: ${theme.colors.dark};
+    margin-top: 3rem;
+    margin-bottom: -4rem;
   `}
 `
 
