@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
 
 export const TabWrapper = styled.div`
   ${({ theme }) => css`
+    .react-tabs {
+      min-height: 15rem;
+    }
+
     .react-tabs__tab {
       color: ${theme.colors.yellow};
     }
@@ -118,6 +122,7 @@ export const Phisic = styled.div`
       ${media.greaterThan('medium')`
         margin-left: 1.8rem;
       `}
+      margin-top: ${theme.spacings.small};
     }
 
     ${media.lessThan('medium')`
