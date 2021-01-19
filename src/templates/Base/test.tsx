@@ -12,6 +12,15 @@ jest.mock('components/Navbar', () => {
   }
 })
 
+jest.mock('components/Footer', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Footer"></div>
+    }
+  }
+})
+
 describe('<Base />', () => {
   it('should render the base component', () => {
     renderWithTheme(
@@ -20,6 +29,12 @@ describe('<Base />', () => {
       </Base>
     )
 
+    expect(
+      screen.getByRole('heading', { name: /content/i })
+    ).toBeInTheDocument()
+
     expect(screen.getByTestId('Mock Navbar')).toBeInTheDocument()
+
+    expect(screen.getByTestId('Mock Footer')).toBeInTheDocument()
   })
 })

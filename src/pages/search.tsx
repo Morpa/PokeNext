@@ -27,7 +27,7 @@ const Search = ({ initialSearch }: SearchPageProps) => {
       >
         <TextField
           name="search"
-          placeholder="Procurar pokemons..."
+          placeholder="Search pokemons..."
           initialValue=""
           icon={<SearchIcon />}
           value={query}

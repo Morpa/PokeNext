@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 import { Container } from 'components/Container'
 import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
 
 export type BaseTemplateProps = {
   children: React.ReactNode
@@ -24,6 +25,7 @@ const Base = ({ children }: BaseTemplateProps) => {
     <Container>
       <Navbar isVisible={isVisible} />
       {children}
+      <Footer />
     </Container>
   )
 }
