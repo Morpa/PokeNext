@@ -5,6 +5,8 @@ import { Container } from 'components/Container'
 import Navbar from 'components/Navbar'
 import Footer from 'components/Footer'
 
+import * as S from './styles'
+
 export type BaseTemplateProps = {
   children: React.ReactNode
 }
@@ -23,9 +25,11 @@ const Base = ({ children }: BaseTemplateProps) => {
 
   return (
     <Container>
-      <Navbar isVisible={isVisible} />
-      {children}
-      <Footer />
+      <S.Wrapper>
+        <Navbar isVisible={isVisible} />
+        <S.Content>{children}</S.Content>
+        <Footer />
+      </S.Wrapper>
     </Container>
   )
 }

@@ -19,6 +19,7 @@ export const TabWrapper = styled.div`
   ${({ theme }) => css`
     .react-tabs {
       min-height: 15rem;
+      margin-top: ${theme.spacings.large};
     }
 
     .react-tabs__tab {
